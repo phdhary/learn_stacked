@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_stacked/ui/views/home/home_view.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,17 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-          backgroundColor: Colors.amber,
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Hello Babiq'),
-          ),
-        ),
-      ),
+      home: HomeView()
     );
   }
 }
